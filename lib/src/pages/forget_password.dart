@@ -47,7 +47,7 @@ class _ForgetPasswordWidgetState extends StateMVC<ForgetPasswordWidget> {
                 height: config.App(context).appHeight(37),
                 child: Text(
                   S.of(context).email_to_reset_password,
-                  style: Theme.of(context).textTheme.display3.merge(TextStyle(color: Theme.of(context).primaryColor)),
+                  style: Theme.of(context).textTheme.headline2.merge(TextStyle(color: Theme.of(context).primaryColor)),
                 ),
               ),
             ),

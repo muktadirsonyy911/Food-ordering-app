@@ -47,7 +47,7 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
           builder: (context, value, child) {
             return Text(
               value.appName ?? S.of(context).home,
-              style: Theme.of(context).textTheme.title.merge(TextStyle(letterSpacing: 1.3)),
+              style: Theme.of(context).textTheme.headline6.merge(TextStyle(letterSpacing: 1.3)),
             );
           },
         ),
@@ -108,7 +108,7 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                   ),
                   title: Text(
                     S.of(context).top_restaurants,
-                    style: Theme.of(context).textTheme.display1,
+                    style: Theme.of(context).textTheme.headline4,
                   ),
                   subtitle: Text(
                     settingsRepo.deliveryAddress.value?.address != null
@@ -128,7 +128,7 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                 ),
                 title: Text(
                   S.of(context).trending_this_week,
-                  style: Theme.of(context).textTheme.display1,
+                  style: Theme.of(context).textTheme.headline4,
                 ),
                 subtitle: Text(
                   S.of(context).double_click_on_the_food_to_add_it_to_the,
@@ -147,7 +147,7 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                   ),
                   title: Text(
                     S.of(context).food_categories,
-                    style: Theme.of(context).textTheme.display1,
+                    style: Theme.of(context).textTheme.headline4,
                   ),
                 ),
               ),
@@ -165,7 +165,7 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                   ),
                   title: Text(
                     S.of(context).most_popular,
-                    style: Theme.of(context).textTheme.display1,
+                    style: Theme.of(context).textTheme.headline4,
                   ),
                 ),
               ),
@@ -187,7 +187,7 @@ class _HomeWidgetState extends StateMVC<HomeWidget> {
                   ),
                   title: Text(
                     S.of(context).recent_reviews,
-                    style: Theme.of(context).textTheme.display1,
+                    style: Theme.of(context).textTheme.headline4,
                   ),
                 ),
               ),

@@ -103,7 +103,7 @@ class CardWidget extends StatelessWidget {
                         restaurant.name,
                         overflow: TextOverflow.fade,
                         softWrap: false,
-                        style: Theme.of(context).textTheme.subhead,
+                        style: Theme.of(context).textTheme.subtitle1,
                       ),
                       Text(
                         Helper.skipHtml(restaurant.description),

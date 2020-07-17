@@ -43,7 +43,7 @@ class _TrackingWidgetState extends StateMVC<TrackingWidget> {
           centerTitle: true,
           title: Text(
             S.of(context).tracking_order,
-            style: Theme.of(context).textTheme.title.merge(TextStyle(letterSpacing: 1.3)),
+            style: Theme.of(context).textTheme.headline6.merge(TextStyle(letterSpacing: 1.3)),
           ),
           actions: <Widget>[
             new ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).accentColor),
@@ -73,7 +73,7 @@ class _TrackingWidgetState extends StateMVC<TrackingWidget> {
                                 ],
                                 crossAxisAlignment: CrossAxisAlignment.start,
                               ),
-                              trailing: Helper.getPrice(Helper.getTotalOrdersPrice(_con.order), context, style: Theme.of(context).textTheme.display1),
+                              trailing: Helper.getPrice(Helper.getTotalOrdersPrice(_con.order), context, style: Theme.of(context).textTheme.headline4),
                               children: <Widget>[
                                 Column(
                                     children: List.generate(
@@ -91,10 +91,10 @@ class _TrackingWidgetState extends StateMVC<TrackingWidget> {
                                           Expanded(
                                             child: Text(
                                               S.of(context).delivery_fee,
-                                              style: Theme.of(context).textTheme.body2,
+                                              style: Theme.of(context).textTheme.bodyText1,
                                             ),
                                           ),
-                                          Helper.getPrice(_con.order.deliveryFee, context, style: Theme.of(context).textTheme.subhead)
+                                          Helper.getPrice(_con.order.deliveryFee, context, style: Theme.of(context).textTheme.subtitle1)
                                         ],
                                       ),
                                       Row(
@@ -102,10 +102,10 @@ class _TrackingWidgetState extends StateMVC<TrackingWidget> {
                                           Expanded(
                                             child: Text(
                                               '${S.of(context).tax} (${_con.order.tax}%)',
-                                              style: Theme.of(context).textTheme.body2,
+                                              style: Theme.of(context).textTheme.bodyText1,
                                             ),
                                           ),
-                                          Helper.getPrice(Helper.getTaxOrder(_con.order), context, style: Theme.of(context).textTheme.subhead)
+                                          Helper.getPrice(Helper.getTaxOrder(_con.order), context, style: Theme.of(context).textTheme.subtitle1)
                                         ],
                                       ),
                                       Row(
@@ -113,10 +113,10 @@ class _TrackingWidgetState extends StateMVC<TrackingWidget> {
                                           Expanded(
                                             child: Text(
                                               S.of(context).total,
-                                              style: Theme.of(context).textTheme.body2,
+                                              style: Theme.of(context).textTheme.bodyText1,
                                             ),
                                           ),
-                                          Helper.getPrice(Helper.getTotalOrdersPrice(_con.order), context, style: Theme.of(context).textTheme.display1)
+                                          Helper.getPrice(Helper.getTotalOrdersPrice(_con.order), context, style: Theme.of(context).textTheme.headline4)
                                         ],
                                       ),
                                     ],
@@ -171,7 +171,7 @@ class _TrackingWidgetState extends StateMVC<TrackingWidget> {
                                               _con.order.deliveryAddress?.description ?? "",
                                               overflow: TextOverflow.fade,
                                               softWrap: false,
-                                              style: Theme.of(context).textTheme.subhead,
+                                              style: Theme.of(context).textTheme.subtitle1,
                                             ),
                                             Text(
                                               _con.order.deliveryAddress?.address ?? "",
@@ -206,7 +206,7 @@ class _TrackingWidgetState extends StateMVC<TrackingWidget> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         mainAxisSize: MainAxisSize.max,
                         children: <Widget>[
-                          Text(S.of(context).how_would_you_rate_this_restaurant, style: Theme.of(context).textTheme.subhead),
+                          Text(S.of(context).how_would_you_rate_this_restaurant, style: Theme.of(context).textTheme.subtitle1),
                           Text(S.of(context).click_on_the_stars_below_to_leave_comments, style: Theme.of(context).textTheme.caption),
                           SizedBox(height: 5),
                           FlatButton(

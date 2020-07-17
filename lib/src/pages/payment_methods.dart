@@ -43,7 +43,7 @@ class _PaymentMethodsWidgetState extends State<PaymentMethodsWidget> {
         centerTitle: true,
         title: Text(
           S.of(context).payment_mode,
-          style: Theme.of(context).textTheme.title.merge(TextStyle(letterSpacing: 1.3)),
+          style: Theme.of(context).textTheme.headline6.merge(TextStyle(letterSpacing: 1.3)),
         ),
         actions: <Widget>[
           new ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).accentColor),
@@ -74,7 +74,7 @@ class _PaymentMethodsWidgetState extends State<PaymentMethodsWidget> {
                         S.of(context).payment_options,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.display1,
+                        style: Theme.of(context).textTheme.headline4,
                       ),
                       subtitle: Text(S.of(context).select_your_preferred_payment_mode),
                     ),
@@ -108,7 +108,7 @@ class _PaymentMethodsWidgetState extends State<PaymentMethodsWidget> {
                         S.of(context).cash_on_delivery,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.display1,
+                        style: Theme.of(context).textTheme.headline4,
                       ),
                       subtitle: Text(S.of(context).select_your_preferred_payment_mode),
                     ),

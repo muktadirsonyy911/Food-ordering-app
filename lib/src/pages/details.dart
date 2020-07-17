@@ -108,7 +108,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                                         overflow: TextOverflow.fade,
                                         softWrap: false,
                                         maxLines: 2,
-                                        style: Theme.of(context).textTheme.display2,
+                                        style: Theme.of(context).textTheme.headline3,
                                       ),
                                     ),
                                     SizedBox(
@@ -119,7 +119,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           children: <Widget>[
                                             Text(_con.restaurant.rate,
-                                                style: Theme.of(context).textTheme.body2.merge(TextStyle(color: Theme.of(context).primaryColor))),
+                                                style: Theme.of(context).textTheme.bodyText1.merge(TextStyle(color: Theme.of(context).primaryColor))),
                                             Icon(
                                               Icons.star_border,
                                               color: Theme.of(context).primaryColor,
@@ -183,7 +183,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                                 child: Html(
                                   data: _con.restaurant.description,
-                                  defaultTextStyle: Theme.of(context).textTheme.body1.merge(TextStyle(fontSize: 14)),
+                                  defaultTextStyle: Theme.of(context).textTheme. bodyText2.merge(TextStyle(fontSize: 14)),
                                 ),
                               ),
                               ImageThumbCarouselWidget(galleriesList: _con.galleries),
@@ -198,7 +198,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                                   ),
                                   title: Text(
                                     S.of(context).information,
-                                    style: Theme.of(context).textTheme.display1,
+                                    style: Theme.of(context).textTheme.headline4,
                                   ),
                                 ),
                               ),
@@ -221,7 +221,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                                         _con.restaurant.address,
                                         overflow: TextOverflow.ellipsis,
                                         maxLines: 2,
-                                        style: Theme.of(context).textTheme.body2,
+                                        style: Theme.of(context).textTheme.bodyText1,
                                       ),
                                     ),
                                     SizedBox(width: 10),
@@ -256,7 +256,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                                       child: Text(
                                         '${_con.restaurant.phone} \n${_con.restaurant.mobile}',
                                         overflow: TextOverflow.ellipsis,
-                                        style: Theme.of(context).textTheme.body2,
+                                        style: Theme.of(context).textTheme.bodyText1,
                                       ),
                                     ),
                                     SizedBox(width: 10),
@@ -293,7 +293,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                                         ),
                                         title: Text(
                                           S.of(context).featured_foods,
-                                          style: Theme.of(context).textTheme.display1,
+                                          style: Theme.of(context).textTheme.headline4,
                                         ),
                                       ),
                                     ),
@@ -329,7 +329,7 @@ class _DetailsWidgetState extends StateMVC<DetailsWidget> {
                                         ),
                                         title: Text(
                                           S.of(context).what_they_say,
-                                          style: Theme.of(context).textTheme.display1,
+                                          style: Theme.of(context).textTheme.headline4,
                                         ),
                                       ),
                                     ),

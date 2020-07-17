@@ -46,7 +46,7 @@ class _MenuWidgetState extends StateMVC<MenuWidget> {
           _con.foods.isNotEmpty ? _con.foods[0].restaurant.name : '',
           overflow: TextOverflow.fade,
           softWrap: false,
-          style: Theme.of(context).textTheme.title.merge(TextStyle(letterSpacing: 0)),
+          style: Theme.of(context).textTheme.headline6.merge(TextStyle(letterSpacing: 0)),
         ),
         actions: <Widget>[
           new ShoppingCartButtonWidget(iconColor: Theme.of(context).hintColor, labelColor: Theme.of(context).accentColor),
@@ -73,7 +73,7 @@ class _MenuWidgetState extends StateMVC<MenuWidget> {
               ),
               title: Text(
                 S.of(context).trending_this_week,
-                style: Theme.of(context).textTheme.display1,
+                style: Theme.of(context).textTheme.headline4,
               ),
               subtitle: Text(
                 S.of(context).double_click_on_the_food_to_add_it_to_the,
@@ -90,7 +90,7 @@ class _MenuWidgetState extends StateMVC<MenuWidget> {
               ),
               title: Text(
                 S.of(context).all_menu,
-                style: Theme.of(context).textTheme.display1,
+                style: Theme.of(context).textTheme.headline4,
               ),
               subtitle: Text(
                 S.of(context).longpress_on_the_food_to_add_suplements,

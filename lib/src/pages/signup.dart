@@ -42,7 +42,7 @@ class _SignUpWidgetState extends StateMVC<SignUpWidget> {
                 height: config.App(context).appHeight(29.5),
                 child: Text(
                   S.of(context).lets_start_with_register,
-                  style: Theme.of(context).textTheme.display3.merge(TextStyle(color: Theme.of(context).primaryColor)),
+                  style: Theme.of(context).textTheme.headline2.merge(TextStyle(color: Theme.of(context).primaryColor)),
                 ),
               ),
             ),

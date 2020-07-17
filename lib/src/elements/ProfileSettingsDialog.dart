@@ -32,7 +32,7 @@ class _ProfileSettingsDialogState extends State<ProfileSettingsDialog> {
                     SizedBox(width: 10),
                     Text(
                       S.of(context).profile_settings,
-                      style: Theme.of(context).textTheme.body2,
+                      style: Theme.of(context).textTheme.bodyText1,
                     )
                   ],
                 ),
@@ -110,7 +110,7 @@ class _ProfileSettingsDialogState extends State<ProfileSettingsDialog> {
       },
       child: Text(
         S.of(context).edit,
-        style: Theme.of(context).textTheme.body1,
+        style: Theme.of(context).textTheme.bodyText2,
       ),
     );
   }
@@ -119,7 +119,7 @@ class _ProfileSettingsDialogState extends State<ProfileSettingsDialog> {
     return new InputDecoration(
       hintText: hintText,
       labelText: labelText,
-      hintStyle: Theme.of(context).textTheme.body1.merge(
+      hintStyle: Theme.of(context).textTheme.bodyText2.merge(
             TextStyle(color: Theme.of(context).focusColor),
           ),
       enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Theme.of(context).hintColor.withOpacity(0.2))),

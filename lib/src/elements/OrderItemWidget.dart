@@ -65,7 +65,7 @@ class OrderItemWidget extends StatelessWidget {
                           foodOrder.food.name,
                           overflow: TextOverflow.ellipsis,
                           maxLines: 2,
-                          style: Theme.of(context).textTheme.subhead,
+                          style: Theme.of(context).textTheme.subtitle1,
                         ),
                         Wrap(
                           children: List.generate(foodOrder.extras.length, (index) {
@@ -89,7 +89,7 @@ class OrderItemWidget extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.end,
                     children: <Widget>[
-                      Helper.getPrice(Helper.getOrderPrice(foodOrder), context, style: Theme.of(context).textTheme.subhead),
+                      Helper.getPrice(Helper.getOrderPrice(foodOrder), context, style: Theme.of(context).textTheme.subtitle1),
                       Text(
                         " x " + foodOrder.quantity.toString(),
                         style: Theme.of(context).textTheme.caption,

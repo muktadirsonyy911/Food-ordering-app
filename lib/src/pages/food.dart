@@ -98,13 +98,13 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                             _con.food.name,
                                             overflow: TextOverflow.ellipsis,
                                             maxLines: 2,
-                                            style: Theme.of(context).textTheme.display2,
+                                            style: Theme.of(context).textTheme.headline3,
                                           ),
                                           Text(
                                             _con.food.restaurant.name,
                                             overflow: TextOverflow.ellipsis,
                                             maxLines: 2,
-                                            style: Theme.of(context).textTheme.body1,
+                                            style: Theme.of(context).textTheme.bodyText2,
                                           ),
                                         ],
                                       ),
@@ -117,11 +117,11 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                           Helper.getPrice(
                                             _con.food.price,
                                             context,
-                                            style: Theme.of(context).textTheme.display3,
+                                            style: Theme.of(context).textTheme.headline2,
                                           ),
                                           _con.food.discountPrice > 0
                                               ? Helper.getPrice(_con.food.discountPrice, context,
-                                                  style: Theme.of(context).textTheme.body1.merge(TextStyle(decoration: TextDecoration.lineThrough)))
+                                                  style: Theme.of(context).textTheme.bodyText2.merge(TextStyle(decoration: TextDecoration.lineThrough)))
                                               : SizedBox(height: 0),
                                         ],
                                       ),
@@ -173,7 +173,7 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                   ),
                                   title: Text(
                                     S.of(context).extras,
-                                    style: Theme.of(context).textTheme.subhead,
+                                    style: Theme.of(context).textTheme.subtitle1,
                                   ),
                                   subtitle: Text(
                                     S.of(context).select_extras_to_add_them_on_the_food,
@@ -197,7 +197,7 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                                 ),
                                                 title: Text(
                                                   extraGroup.name,
-                                                  style: Theme.of(context).textTheme.subhead,
+                                                  style: Theme.of(context).textTheme.subtitle1,
                                                 ),
                                               ),
                                               ListView.separated(
@@ -249,7 +249,7 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                   ),
                                   title: Text(
                                     S.of(context).ingredients,
-                                    style: Theme.of(context).textTheme.subhead,
+                                    style: Theme.of(context).textTheme.subtitle1,
                                   ),
                                 ),
                                 Helper.applyHtml(context, _con.food.ingredients, style: TextStyle(fontSize: 12)),
@@ -262,7 +262,7 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                   ),
                                   title: Text(
                                     S.of(context).nutrition,
-                                    style: Theme.of(context).textTheme.subhead,
+                                    style: Theme.of(context).textTheme.subtitle1,
                                   ),
                                 ),
                                 Wrap(
@@ -281,7 +281,7 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                           Text(_con.food.nutritions.elementAt(index).name,
                                               overflow: TextOverflow.ellipsis, style: Theme.of(context).textTheme.caption),
                                           Text(_con.food.nutritions.elementAt(index).quantity.toString(),
-                                              overflow: TextOverflow.ellipsis, style: Theme.of(context).textTheme.headline),
+                                              overflow: TextOverflow.ellipsis, style: Theme.of(context).textTheme.headline5),
                                         ],
                                       ),
                                     );
@@ -296,7 +296,7 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                   ),
                                   title: Text(
                                     S.of(context).reviews,
-                                    style: Theme.of(context).textTheme.subhead,
+                                    style: Theme.of(context).textTheme.subtitle1,
                                   ),
                                 ),
                                 ReviewsListWidget(
@@ -344,7 +344,7 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                 Expanded(
                                   child: Text(
                                     S.of(context).quantity,
-                                    style: Theme.of(context).textTheme.subhead,
+                                    style: Theme.of(context).textTheme.subtitle1,
                                   ),
                                 ),
                                 Row(
@@ -359,7 +359,7 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                       icon: Icon(Icons.remove_circle_outline),
                                       color: Theme.of(context).hintColor,
                                     ),
-                                    Text(_con.quantity.toString(), style: Theme.of(context).textTheme.subhead),
+                                    Text(_con.quantity.toString(), style: Theme.of(context).textTheme.subtitle1),
                                     IconButton(
                                       onPressed: () {
                                         _con.incrementQuantity();
@@ -455,7 +455,7 @@ class _FoodWidgetState extends StateMVC<FoodWidget> {
                                       child: Helper.getPrice(
                                         _con.total,
                                         context,
-                                        style: Theme.of(context).textTheme.display1.merge(TextStyle(color: Theme.of(context).primaryColor)),
+                                        style: Theme.of(context).textTheme.headline4.merge(TextStyle(color: Theme.of(context).primaryColor)),
                                       ),
                                     )
                                   ],

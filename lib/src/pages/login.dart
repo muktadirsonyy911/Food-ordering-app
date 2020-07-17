@@ -49,7 +49,7 @@ class _LoginWidgetState extends StateMVC<LoginWidget> {
               height: config.App(context).appHeight(37),
               child: Text(
                 S.of(context).lets_start_with_login,
-                style: Theme.of(context).textTheme.display3.merge(TextStyle(color: Theme.of(context).primaryColor)),
+                style: Theme.of(context).textTheme.headline2.merge(TextStyle(color: Theme.of(context).primaryColor)),
               ),
             ),
           ),

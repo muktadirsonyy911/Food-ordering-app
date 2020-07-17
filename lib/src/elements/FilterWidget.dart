@@ -41,7 +41,7 @@ class _FilterWidgetState extends StateMVC<FilterWidget> {
                     },
                     child: Text(
                       S.of(context).clear,
-                      style: Theme.of(context).textTheme.body2,
+                      style: Theme.of(context).textTheme.bodyText1,
                     ),
                   )
                 ],

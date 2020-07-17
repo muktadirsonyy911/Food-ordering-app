@@ -43,7 +43,7 @@ class _ProfileWidgetState extends StateMVC<ProfileWidget> {
         centerTitle: true,
         title: Text(
           S.of(context).profile,
-          style: Theme.of(context).textTheme.title.merge(TextStyle(letterSpacing: 1.3, color: Theme.of(context).primaryColor)),
+          style: Theme.of(context).textTheme.headline6.merge(TextStyle(letterSpacing: 1.3, color: Theme.of(context).primaryColor)),
         ),
         actions: <Widget>[
           new ShoppingCartButtonWidget(iconColor: Theme.of(context).primaryColor, labelColor: Theme.of(context).hintColor),
@@ -64,14 +64,14 @@ class _ProfileWidgetState extends StateMVC<ProfileWidget> {
                     ),
                     title: Text(
                       S.of(context).about,
-                      style: Theme.of(context).textTheme.display1,
+                      style: Theme.of(context).textTheme.headline4,
                     ),
                   ),
                   Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Text(
                       currentUser.value?.bio ?? "",
-                      style: Theme.of(context).textTheme.body1,
+                      style: Theme.of(context).textTheme.bodyText2,
                     ),
                   ),
                   ListTile(
@@ -82,7 +82,7 @@ class _ProfileWidgetState extends StateMVC<ProfileWidget> {
                     ),
                     title: Text(
                       S.of(context).recent_orders,
-                      style: Theme.of(context).textTheme.display1,
+                      style: Theme.of(context).textTheme.headline4,
                     ),
                   ),
                   _con.recentOrders.isEmpty

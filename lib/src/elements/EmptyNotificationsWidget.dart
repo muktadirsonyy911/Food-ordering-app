@@ -98,7 +98,7 @@ class _EmptyNotificationsWidgetState extends State<EmptyNotificationsWidget> {
                 child: Text(
                   S.of(context).dont_have_any_item_in_the_notification_list,
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.display2.merge(TextStyle(fontWeight: FontWeight.w300)),
+                  style: Theme.of(context).textTheme.headline3.merge(TextStyle(fontWeight: FontWeight.w300)),
                 ),
               ),
               SizedBox(height: 50),
@@ -114,7 +114,7 @@ class _EmptyNotificationsWidgetState extends State<EmptyNotificationsWidget> {
                         S.of(context).start_exploring,
                         style: Theme.of(context)
                             .textTheme
-                            .title
+                            .headline6
                             .merge(TextStyle(color: Theme.of(context).scaffoldBackgroundColor)),
                       ),
                     )

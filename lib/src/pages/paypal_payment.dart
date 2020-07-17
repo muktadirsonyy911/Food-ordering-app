@@ -30,7 +30,7 @@ class _PayPalPaymentWidgetState extends StateMVC<PayPalPaymentWidget> {
         centerTitle: true,
         title: Text(
           S.of(context).paypal_payment,
-          style: Theme.of(context).textTheme.title.merge(TextStyle(letterSpacing: 1.3)),
+          style: Theme.of(context).textTheme.headline6.merge(TextStyle(letterSpacing: 1.3)),
         ),
       ),
       body: Stack(
